@@ -88,7 +88,7 @@ def add_questionbank():
         flash('Question bank added successfully.', 'success')
         return redirect(url_for('admin_dashboard'))
 
-    return render_template('admin_templates/add_questionbank.html')
+    return render_template('admin_templates/add_questionbank.html',current_year=datetime.now().year)
 
 
 
